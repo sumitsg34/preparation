@@ -60,9 +60,17 @@ public class QuickSort {
         int n = arr.length;
 
         QuickSort ob = new QuickSort();
-        ob.sort(arr, 0, n - 1);
+        //ob.sort(arr, 0, n - 1);
 
         System.out.println("sorted array");
-        printArray(arr);
+        //
+        StringBuilder s = new StringBuilder("abc");
+        StringBuilder s1 = s;
+        s1.append("d");
+        System.out.println("ans " + (s == s1));
+
+        int a = 3 & 5;
+        int b = 3 | 5;
+        System.out.println(a + " " + b);
     }
 }

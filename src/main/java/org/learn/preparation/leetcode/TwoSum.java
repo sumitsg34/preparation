@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
 
 /**
@@ -62,9 +63,11 @@ public class TwoSum {
          *
          *                 3 2 4 =6
          */
+
+        // {2, 5, 7, 9}  9
         int secondIndex=0;
         int otherNumber=0;
-        HashMap<Integer,Integer> seenNumbers = new HashMap<>();
+        Map<Integer,Integer> seenNumbers = new HashMap<>();
         for(int i=0; i<nums.length;i++){
             otherNumber = target - nums[i];
             if(seenNumbers.get(otherNumber)!=null){

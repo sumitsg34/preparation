@@ -1,7 +1,5 @@
 package org.learn.preparation.leetcode;
 
-import org.learn.preparation.leetcode.ValidateBinaryTree.TreeNode;
-
 public class InvertTree {
 
     public TreeNode invertTree(TreeNode root) {

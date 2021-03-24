@@ -1,6 +1,8 @@
 package org.learn.preparation.sort;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class InsertionSort {
 
@@ -28,5 +30,10 @@ public class InsertionSort {
 
     public static void main(String[] args) {
         sort(new int[]{23, 56, 12, 33, 67, 24, 11});
+
+        List<Integer[]> a = new ArrayList();
+        int[][] b = new int[3][3];
+
+        Arrays.sort(b, (o1, o2) -> o1[0]-o2[0]);
     }
 }
