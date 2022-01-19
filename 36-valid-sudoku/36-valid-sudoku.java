@@ -5,7 +5,6 @@ class Solution {
         int[][] numbers = new int[9][9];
         int[][] numbers2 = new int[9][9];
 
-
         int[][][] subBoxes = new int[3][3][9];
 
         for(int i=0; i<9; i++) {
