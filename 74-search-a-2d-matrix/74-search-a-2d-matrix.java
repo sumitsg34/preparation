@@ -1,8 +1,6 @@
 class Solution {
     public boolean searchMatrix(int[][] matrix, int target) {
         
-        
-        // compare last element & then use binary search
         int lastIndex = matrix[0].length-1;
         
         for ( int i=0; i < matrix.length; i++) {
@@ -16,20 +14,17 @@ class Solution {
         }
         
         return false;
-        
     }
     
     
     private boolean binarySearch(int[] matrix, int target) {
         
         int i = 0;
-        int j = matrix.length-1; //2
-        
-       // System.out.println(Arrays.toString(matrix));
+        int j = matrix.length-1;
         
         while( i <= j ) {
             
-            int temp = (i+j)/2;  // 0+2 = 2/2 = 1
+            int temp = (i+j)/2;
             
             if(target == matrix[temp]) 
                 return true;
