@@ -9,14 +9,14 @@ class Solution {
         
         int[] visited = new int[26];
         
-        for(int i=0; i< s.length(); i++) {
-            int character = s.charAt(i) - 'a';
+        for(char c : s.toCharArray()) {
+            int character = c - 'a';
             visited[character] = visited[character] + 1;
         }
         
         
-        for(int i=0; i<t.length(); i++) {
-            int character = t.charAt(i) - 'a' ;
+         for(char c : t.toCharArray()) {
+            int character = c - 'a' ;
             
             if(visited[character] == 0)
                 return false;
