@@ -58,10 +58,4 @@ class Solution {
         
     }
     
-    private void display(ListNode head) {
-        while(head!=null) {
-            System.out.println(head.val + "-->");
-            head=head.next;
-        }
-    }
 }
