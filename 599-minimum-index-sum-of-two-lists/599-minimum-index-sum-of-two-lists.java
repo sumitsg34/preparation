@@ -9,7 +9,7 @@ class Solution {
         }
         
         List<String> commonHotels = new ArrayList<>();
-        Integer indexSum = 100000;
+        Integer indexSum = 11000;
         
         for(int i = 0; i < list2.length; i++ ) {
             if(hotels.containsKey(list2[i])) {
